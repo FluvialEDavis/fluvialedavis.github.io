@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+
+// Archivo
+@font-face {
+  font-family: "Archivo";
+  font-weight: normal;
+  src: url("../fonts/archivo/woff/Archivo-Regular.woff") format("woff");
+  src: url("../fonts/archivo/woff2/Archivo-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Archivo";
+  font-weight: bold;
+  src: url("../fonts/archivo/woff/Archivo-Bold.woff") format("woff");
+  src: url("../fonts/archivo/woff2/Archivo-Bold.woff2") format("woff2");
+}
+
+// HK Grotesk
+@font-face {
+  font-family: "HKGrotesk";
+  font-weight: lighter;
+  src: url("../fonts/hk-grotesk/HKGrotesk-LightLegacy.woff") format("woff");
+  src: url("../fonts/hk-grotesk/HKGrotesk-LightLegacy.woff2") format("woff2");
+}
+@font-face {
+  font-family: "HKGrotesk";
+  font-weight: lighter;
+  font-style: italic;
+  src: url("../fonts/hk-grotesk/HKGrotesk-LightLegacyItalic.woff") format("woff");
+  src: url("../fonts/hk-grotesk/HKGrotesk-LightLegacyItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "HKGrotesk";
+  font-weight: normal;
+  src: url("../fonts/hk-grotesk/HKGrotesk-RegularLegacy.woff") format("woff");
+  src: url("../fonts/hk-grotesk/HKGrotesk-RegularLegacy.woff2") format("woff2");
+}
+@font-face {
+  font-family: "HKGrotesk";
+  font-weight: normal;
+  font-style: italic;
+  src: url("../fonts/hk-grotesk/HKGrotesk-LegacyItalic.woff") format("woff");
+  src: url("../fonts/hk-grotesk/HKGrotesk-LegacyItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "HKGrotesk";
+  font-weight: bold;
+  src: url("../fonts/hk-grotesk/HKGrotesk-BoldLegacy.woff") format("woff");
+  src: url("../fonts/hk-grotesk/HKGrotesk-BoldLegacy.woff2") format("woff2");
+}
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+// $blue: #06bcef;
+// Add pink and its invert
+// $pink: #ff8080;
+// $pink-invert: #fff;
+
+@import "nord.scss";
+@import "lumio.scss";
+
+// Update the sans-serif font family
+
+$family-sans-serif: "HKGrotesk", "Helvetica", "Arial", sans-serif;
+$shadow: #2A3132;
+$stone: #336B87;
+$autumn: #FF5C39;
+$mist: #90AFC5;
+$P274C: #211551;
+$warm-white: #F0F5F7;
+
+/*
+// 3. Set the derived variables
+// Use the new pink as the primary color
+*/
+$primary: $lumio29;
+// $primary-invert: $pink-invert;
+
+// 4. Import the rest of Bulma
+
+
+@import "../node_modules/bulma/bulma";
+
+body {font-kerning: normal}
+.title, .subtitle {font-family: "Archivo"; color: $lumio29}
+.atlas {font-family: "Archivo";}
+.title {font-weight: bold;}
+.myName {font-weight: bold;}
+table {font-family: "Archivo"}
+.employment {margin-bottom: -1em;}
+.scrollfoot {padding-bottom: .75em;}
