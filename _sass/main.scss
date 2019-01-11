@@ -85,15 +85,21 @@ $primary: $lumio29;
 // $primary-invert: $pink-invert;
 
 // 4. Import the rest of Bulma
-
-
 @import "../node_modules/bulma/bulma";
 
 body {font-kerning: normal}
 .title, .subtitle {font-family: "Archivo"; color: $lumio29}
 .atlas {font-family: "Archivo";}
 .title {font-weight: bold;}
+.postTitle {@extend .title; color: $turquoise}
 .myName {font-weight: bold;}
 table {font-family: "Archivo"}
 .employment {margin-bottom: -1em;}
 .scrollfoot {padding-bottom: .75em;}
+.footer {background-color: $nord8}
+.navbar {
+&.is-transparent {
+background-color: transparent;
+background-image: none;
+}
+}

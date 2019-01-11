@@ -2918,7 +2918,7 @@ a.box:active {
     position: absolute;
     right: 0.5rem;
     top: 0.5rem; }
-  .notification .title,
+  .notification .title, .notification .postTitle,
   .notification .subtitle,
   .notification .content {
     color: currentColor; }
@@ -3278,52 +3278,53 @@ a.box:active {
 a.tag:hover {
   text-decoration: underline; }
 
-.title,
+.title, .postTitle,
 .subtitle {
   word-break: break-word; }
-  .title:not(:last-child),
+  .title:not(:last-child), .postTitle:not(:last-child),
   .subtitle:not(:last-child) {
     margin-bottom: 1.5rem; }
-  .title em,
+  .title em, .postTitle em,
   .title span,
+  .postTitle span,
   .subtitle em,
   .subtitle span {
     font-weight: inherit; }
-  .title sub,
+  .title sub, .postTitle sub,
   .subtitle sub {
     font-size: 0.75em; }
-  .title sup,
+  .title sup, .postTitle sup,
   .subtitle sup {
     font-size: 0.75em; }
-  .title .tag,
+  .title .tag, .postTitle .tag,
   .subtitle .tag {
     vertical-align: middle; }
 
-.title {
+.title, .postTitle {
   color: #363636;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.125; }
-  .title strong {
+  .title strong, .postTitle strong {
     color: inherit;
     font-weight: inherit; }
-  .title + .highlight {
+  .title + .highlight, .postTitle + .highlight {
     margin-top: -0.75rem; }
-  .title:not(.is-spaced) + .subtitle {
+  .title:not(.is-spaced) + .subtitle, .postTitle:not(.is-spaced) + .subtitle {
     margin-top: -1.5rem; }
-  .title.is-1 {
+  .title.is-1, .is-1.postTitle {
     font-size: 3rem; }
-  .title.is-2 {
+  .title.is-2, .is-2.postTitle {
     font-size: 2.5rem; }
-  .title.is-3 {
+  .title.is-3, .is-3.postTitle {
     font-size: 2rem; }
-  .title.is-4 {
+  .title.is-4, .is-4.postTitle {
     font-size: 1.5rem; }
-  .title.is-5 {
+  .title.is-5, .is-5.postTitle {
     font-size: 1.25rem; }
-  .title.is-6 {
+  .title.is-6, .is-6.postTitle {
     font-size: 1rem; }
-  .title.is-7 {
+  .title.is-7, .is-7.postTitle {
     font-size: 0.75rem; }
 
 .subtitle {
@@ -3334,7 +3335,7 @@ a.tag:hover {
   .subtitle strong {
     color: #363636;
     font-weight: 600; }
-  .subtitle:not(.is-spaced) + .title {
+  .subtitle:not(.is-spaced) + .title, .subtitle:not(.is-spaced) + .postTitle {
     margin-top: -1.5rem; }
   .subtitle.is-1 {
     font-size: 3rem; }
@@ -3674,7 +3675,7 @@ a.dropdown-item {
   flex-grow: 0;
   flex-shrink: 0;
   justify-content: center; }
-  .level-item .title,
+  .level-item .title, .level-item .postTitle,
   .level-item .subtitle {
     margin-bottom: 0; }
   @media screen and (max-width: 768px) {
@@ -6040,7 +6041,7 @@ label.panel-block {
     .hero.is-white a:not(.button):not(.dropdown-item):not(.tag),
     .hero.is-white strong {
       color: inherit; }
-    .hero.is-white .title {
+    .hero.is-white .title, .hero.is-white .postTitle {
       color: #0a0a0a; }
     .hero.is-white .subtitle {
       color: rgba(10, 10, 10, 0.9); }
@@ -6084,7 +6085,7 @@ label.panel-block {
     .hero.is-black a:not(.button):not(.dropdown-item):not(.tag),
     .hero.is-black strong {
       color: inherit; }
-    .hero.is-black .title {
+    .hero.is-black .title, .hero.is-black .postTitle {
       color: white; }
     .hero.is-black .subtitle {
       color: rgba(255, 255, 255, 0.9); }
@@ -6128,7 +6129,7 @@ label.panel-block {
     .hero.is-light a:not(.button):not(.dropdown-item):not(.tag),
     .hero.is-light strong {
       color: inherit; }
-    .hero.is-light .title {
+    .hero.is-light .title, .hero.is-light .postTitle {
       color: #363636; }
     .hero.is-light .subtitle {
       color: rgba(54, 54, 54, 0.9); }
@@ -6172,7 +6173,7 @@ label.panel-block {
     .hero.is-dark a:not(.button):not(.dropdown-item):not(.tag),
     .hero.is-dark strong {
       color: inherit; }
-    .hero.is-dark .title {
+    .hero.is-dark .title, .hero.is-dark .postTitle {
       color: whitesmoke; }
     .hero.is-dark .subtitle {
       color: rgba(245, 245, 245, 0.9); }
@@ -6216,7 +6217,7 @@ label.panel-block {
     .hero.is-primary a:not(.button):not(.dropdown-item):not(.tag),
     .hero.is-primary strong {
       color: inherit; }
-    .hero.is-primary .title {
+    .hero.is-primary .title, .hero.is-primary .postTitle {
       color: #fff; }
     .hero.is-primary .subtitle {
       color: rgba(255, 255, 255, 0.9); }
@@ -6260,7 +6261,7 @@ label.panel-block {
     .hero.is-link a:not(.button):not(.dropdown-item):not(.tag),
     .hero.is-link strong {
       color: inherit; }
-    .hero.is-link .title {
+    .hero.is-link .title, .hero.is-link .postTitle {
       color: #fff; }
     .hero.is-link .subtitle {
       color: rgba(255, 255, 255, 0.9); }
@@ -6304,7 +6305,7 @@ label.panel-block {
     .hero.is-info a:not(.button):not(.dropdown-item):not(.tag),
     .hero.is-info strong {
       color: inherit; }
-    .hero.is-info .title {
+    .hero.is-info .title, .hero.is-info .postTitle {
       color: #fff; }
     .hero.is-info .subtitle {
       color: rgba(255, 255, 255, 0.9); }
@@ -6348,7 +6349,7 @@ label.panel-block {
     .hero.is-success a:not(.button):not(.dropdown-item):not(.tag),
     .hero.is-success strong {
       color: inherit; }
-    .hero.is-success .title {
+    .hero.is-success .title, .hero.is-success .postTitle {
       color: #fff; }
     .hero.is-success .subtitle {
       color: rgba(255, 255, 255, 0.9); }
@@ -6392,7 +6393,7 @@ label.panel-block {
     .hero.is-warning a:not(.button):not(.dropdown-item):not(.tag),
     .hero.is-warning strong {
       color: inherit; }
-    .hero.is-warning .title {
+    .hero.is-warning .title, .hero.is-warning .postTitle {
       color: rgba(0, 0, 0, 0.7); }
     .hero.is-warning .subtitle {
       color: rgba(0, 0, 0, 0.9); }
@@ -6436,7 +6437,7 @@ label.panel-block {
     .hero.is-danger a:not(.button):not(.dropdown-item):not(.tag),
     .hero.is-danger strong {
       color: inherit; }
-    .hero.is-danger .title {
+    .hero.is-danger .title, .hero.is-danger .postTitle {
       color: #fff; }
     .hero.is-danger .subtitle {
       color: rgba(255, 255, 255, 0.9); }
@@ -6555,15 +6556,19 @@ label.panel-block {
 body {
   font-kerning: normal; }
 
-.title, .subtitle {
+.title, .postTitle,
+.subtitle {
   font-family: "Archivo";
   color: #0480A4; }
 
 .atlas {
   font-family: "Archivo"; }
 
-.title {
+.title, .postTitle {
   font-weight: bold; }
+
+.postTitle {
+  color: #00d1b2; }
 
 .myName {
   font-weight: bold; }
@@ -6576,3 +6581,10 @@ table {
 
 .scrollfoot {
   padding-bottom: .75em; }
+
+.footer {
+  background-color: #88c0d0; }
+
+.navbar.is-transparent {
+  background-color: transparent;
+  background-image: none; }
